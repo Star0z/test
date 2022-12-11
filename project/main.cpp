@@ -1,17 +1,18 @@
 ﻿#include <iostream>
+#include <cmath>
 
 using namespace std;
 
 int main()
 {
-    double y, x1, x2;
+    double x,y;
     
-    cin>>x1;
-    cin>>x2;
+    cin>>x;
     
-    y = (exp(-x1)) + exp(-x2)) / 2;
+    y = 1 - x;
     
-    cout<<y;
-
+    cout<<floor((1 - y) * 10);
+    
     return 0;
+    
 }
